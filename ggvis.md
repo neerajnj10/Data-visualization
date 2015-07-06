@@ -1,7 +1,7 @@
 
 ---
-title: 'Assignment 3: ggvis'
-author: "jharner"
+title: 'ggvis'
+author: "neeraj"
 date: "March 2, 2015"
 output: html_document
 ---
