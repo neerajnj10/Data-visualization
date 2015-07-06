@@ -1,13 +1,12 @@
 ---
-title: 'Assignment 1: Traditional Graphics'
-author: "jharner"
-date: "February 7, 2015"
+title: 'Traditional Graphics'
+author: "neeraj"
 output: html_document
 ---
 
-Develop the R code to reproduct the following plots:
+*Develop the R code to reproduct the following plots:*
 
-1. The exponential probability density function and cumulative distribution function with $\lambda = 1.5$, where $m$ is the median.
+###The exponential probability density function and cumulative distribution function with $\lambda = 1.5$, where $m$ is the median.
 
 ![exponential](exponential.png)
 
@@ -45,7 +44,7 @@ lines(c(-0.2,5.2),c(1.0,1.0),lty=3, col = "gray80")
 text(0.5, 0.03, "m", pos=1, cex=1)
 ```
 
-2. Histogram of a normal random sample of $n = 100$ with $\mu = 10$ and $\sigma = 2$.
+###Histogram of a normal random sample of $n = 100$ with $\mu = 10$ and $\sigma = 2$.
 
 ![histogram](histogram.png)
 
@@ -61,7 +60,7 @@ curve(dnorm(x,mean=10,sd=2),lwd=2,add=TRUE)
 rug(y) 
 ```
 
-3. Cross-section of a mine tunnel. The small dots at the bottom of the mine tunnel represent debris which is uniformly distribured from 0 to 360 with $n = 250$.
+###Cross-section of a mine tunnel. The small dots at the bottom of the mine tunnel represent debris which is uniformly distribured from 0 to 360 with $n = 250$.
 
 ![mine](mine.png)
 
