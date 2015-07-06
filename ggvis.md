@@ -3,7 +3,6 @@
 title: 'ggvis'
 author: "neeraj"
 date: "March 2, 2015"
-output: html_document
 ---
 
 Graphically analyze using `ggvis` the 1970 Boston housing dataset. This dataset consists of 14 variables with 506 observations. The target variable, `medv`, is the median owner-occupied home value in 1000's of dollars. The Boston dataset is found in the `MASS` package. 
