@@ -24,7 +24,7 @@ All variables are highly significant.
 
 See the variable descriptions using `help` in the `MASS` package.
 
-1. Plot and discuss the distributions of the log of the median home value (`log(medv)`) faceted by both Charles River (`chas`) and radial highway location (`rad`). Does the log transformation improve symmetry?
+####Plot and discuss the distributions of the log of the median home value (`log(medv)`) faceted by both Charles River (`chas`) and radial highway location (`rad`). Does the log transformation improve symmetry?
 
 
 
@@ -62,7 +62,7 @@ ggplot(Boston, aes(x=(medv))) + geom_histogram(binwidth=5)+
 ```
 
 
-2. Plot and discuss the boxplot distributions of the log of the median home values (`log(medv)`) by the Charles River (`chas`) and separately by radial highway locations (`rad`). Draw horizontal lines at `mean(log(medv))` in each plot.
+####Plot and discuss the boxplot distributions of the log of the median home values (`log(medv)`) by the Charles River (`chas`) and separately by radial highway locations (`rad`). Draw horizontal lines at `mean(log(medv))` in each plot.
 
 
 
@@ -89,7 +89,7 @@ ggplot(Boston, aes(y=log(medv),x=rad, fill= rad)) + geom_boxplot()+
 
 
 
-3. Explore graphically the relationship of crime (`crim`) to the log of the median home values (`log(medv)`) with and without faceting on the radial highway locations (`rad`). What difficulties do you see in using `crim` as a predictor?
+####Explore graphically the relationship of crime (`crim`) to the log of the median home values (`log(medv)`) with and without faceting on the radial highway locations (`rad`). What difficulties do you see in using `crim` as a predictor?
 
 
 * Since both the vaiables are continuous, it is preferable to use to scatterplot to show relationship betweent the two. "crim" is a predictor therefore placed on x-axis. In some cases, Linear model method is used to draw a straight line through the plot to depict any relation possible. 
@@ -147,7 +147,7 @@ ggplot(Boston, aes(x=log(crim), y=log(medv), color=rad)) +
   facet_wrap(~rad, scale="free")
 ```
 
-4. To explore the the crime variable (`crim`):  
+####To explore the the crime variable (`crim`):  
 a) Plot the density histogram of the log of crime (`log(crim)`). Superimpose a density curve.   
 b) Plot and discuss the boxplot distribution of crime (`crim`) relative to the radial highway locations (`rad`). Should crime be logged in the linear model?
 
@@ -189,7 +189,7 @@ ggplot(Boston, aes(x=rad, y=crim, color=rad)) + geom_boxplot() +
   scale_y_log10()
 ```
 
-5. To explore the effect of `lstat` on the model:  
+####To explore the effect of `lstat` on the model:  
 a) Explore graphically the relationship of percent lower status (`lstat`) to the log of the median home (`log(medv)`) values with and without faceting on the radial highway locations (`rad`).
 b) Add linear fits overall and for each facet. Discuss the efficacy of the fits and whether or not there appears to be an interaction between `lstat` and `rad`.
 
